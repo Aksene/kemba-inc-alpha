@@ -1,0 +1,37 @@
+.aboutUs-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-column-gap: 1.5rem; */
+}
+
+.aboutUs-header {
+  top: -121px;
+  margin-bottom: -121px;
+  height: 750px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.aboutUs-header img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% 20%;
+  filter: blur(1.5px);
+  filter: brightness(40%);
+  z-index: 0;
+}
+
+.aboutUs-header .aboutUs-header_text {
+  z-index: 1;
+  top: 300px;
+  position: relative;
+  text-align: center;
+  color: var(--light-color);
+  padding: 50px;
+  font-weight: bolder;
+  font-size: x-large;
+}

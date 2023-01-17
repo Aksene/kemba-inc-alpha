@@ -1,0 +1,56 @@
+.container {
+  width: 1600px;
+  margin: auto;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 50px;
+}
+
+.subcontainer {
+  width: 90%;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.slide-img {
+  width: 100%;
+  min-height: 275px;
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-img:nth-child(1) {
+  background-image: url(./slideshowPics/good1.png);
+}
+.slide-img:nth-child(2) {
+  background-image: url(./slideshowPics/good2.png);
+  /* grid-row: 2/3;
+  grid-column: 2/5; */
+}
+.slide-img:nth-child(3) {
+  background-image: url(./slideshowPics/good3.png);
+}
+.slide-img:nth-child(4) {
+  background-image: url(./slideshowPics/good5.png);
+}
+.slide-img:nth-child(5) {
+  background-image: url(./slideshowPics/good6.png);
+}
+.slide-img:nth-child(6) {
+  background-image: url(./slideshowPics/good7.png);
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 100%;
+  }
+}

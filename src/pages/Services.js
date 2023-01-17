@@ -1,0 +1,78 @@
+import React from 'react'
+import './Services.css'
+import Layout from '../components/Layout'
+import Hero from '../components/Hero'
+import HeroFlip from '../components/HeroFlip'
+import GoodsSlideshow from '../components/GoodsSlideshow'
+import DualVideoHero from '../components/DualVideoHero'
+import DualLinkHero from '../components/DualLinkHero'
+import kemba2 from '../Assets/kemba2.png'
+import port1 from '../Assets/port1.jpg'
+import port3 from '../Assets/port3.jpg'
+import video1 from '../components/slideshowPics/vid1.mov'
+import video2 from '../components/slideshowPics/vid2.mov'
+import ouz2 from '../Assets/ouz2.png'
+import officeTeam from '../Assets/officeTeam.png'
+
+
+
+const Services = () => {
+    const headerText = "Our Market"
+    const text = "Our vast experience in the sector gives us a wide view of the world economy. KEMBA works effectively with its partners and that is why we have become an indispensable supplier that understands our clients demands and can help them thrive in this evolving market."
+    
+    return (
+        <Layout>
+            <div className="services-container">
+                <div className="services-header">
+                    <img src={port1} alt="Goods" className='services-hero_img' />
+                    <div className="services-header_text">
+                        <h1>Services</h1>
+                        <h2>What's our Market?</h2>
+                    </div>
+                </div>
+
+                <Hero
+                    className="Hero2"
+                    pic={kemba2}
+                    picAlt="Goods"
+                    title={headerText}
+                    text={text}
+                    // color="#fff0f1"
+                    color="#FFF6F6"
+                    marginFix="-5px;"
+                />
+                <HeroFlip
+                    className="Hero2"
+                    pic={port3}
+                    picAlt="Goods"
+                    title={headerText}
+                    text={text}
+                    // color="#fff0f1"
+                    color="#FFF6F6"
+                    marginFix="-5px;"
+                />
+
+                <div id="goods">
+                    <GoodsSlideshow/>
+
+                    <DualVideoHero
+                        vid1={video1}
+                        vid2={video2}
+                    />
+                </div>
+
+                <DualLinkHero
+                    pic1 = {ouz2}
+                    pic2 = {officeTeam}
+                    button1 = "About Us"
+                    button2 = "Meet The Team"
+                    link1 = "/about-us"
+                    link2 = "/team"
+                />
+
+            </div>
+        </Layout>
+    )
+}
+
+export default Services

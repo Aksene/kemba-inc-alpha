@@ -1,0 +1,18 @@
+.dualVideo-hero {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dualVideo-hero_video {
+  height: 600px;
+  max-width: 100%;
+}
+
+.dualVideo-hero_video video {
+  height: 400px;
+  width: 65%;
+}
