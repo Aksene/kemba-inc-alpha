@@ -255,7 +255,7 @@ footer {
   padding-bottom: 15px;
 }
 
-.footer-links a:visited {
+.footer-links a {
   text-decoration: none !important;
   color: var(--light-color);
   list-style: none;
@@ -265,6 +265,11 @@ footer {
 .footer-links a:visited {
   text-decoration: none !important;
   color: var(--light-color);
+}
+
+.footer-links a:hover {
+  text-decoration: underline !important;
+  color: var(--brand-color);
 }
 
 .footer-info {
