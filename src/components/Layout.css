@@ -40,6 +40,7 @@
   border-bottom-style: groove;
   border-color: var(--hover-color);
   border-bottom-width: thick;
+  border-radius: 8px;
 }
 
 .header button {
