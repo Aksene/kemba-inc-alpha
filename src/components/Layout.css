@@ -92,6 +92,7 @@
 
 .nav-item:hover {
   border-bottom: 2px solid #e2a27e;
+  box-shadow: 0 0 5px var(--brand-color), 0 0 25px var(--brand-color);
 }
 
 .nav-links {
@@ -256,10 +257,16 @@ footer {
 
 .footer-links a:visited {
   text-decoration: none !important;
-  color: var(--brand-color);
+  color: var(--light-color);
   list-style: none;
   padding-bottom: 15px;
 }
+
+.footer-links a:visited {
+  text-decoration: none !important;
+  color: var(--light-color);
+}
+
 .footer-info {
   display: grid;
   grid-template-columns: auto auto auto;
