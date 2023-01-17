@@ -133,7 +133,7 @@ const Layout = ({children}) => {
                                 </a>
                             </li>
                             <li className="footer-cat_links">
-                                Email: <span> </span> 
+                                E-mail: <span> </span> 
                                 <a href="mailto:kembacorp@gmail.com" target="_blank">
                                     <span>kembacorp@gmail.com</span>
                                 </a>
