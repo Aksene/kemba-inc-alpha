@@ -25,7 +25,7 @@ const AboutUs = () => {
     Senegal with strategic partners in Asia and Europe. He is a graduate of Salem State University, Boston
     and with a degree in International Business and Finance. He is a prominent Senegalese American
     entrepreneur with extensive international experience in general trading and in international business.
-    
+    \n\n
     With strong ambitions of being a leader in the commodities trading, and assisting small African
     companies for 10 years, Cheikh Ousman Ndiaye is passionate about supporting companies and working
     with colleagues around the world.

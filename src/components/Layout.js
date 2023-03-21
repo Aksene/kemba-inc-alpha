@@ -52,11 +52,11 @@ const Layout = ({children}) => {
                                 About Us
                             </Link>
                         </li>
-                        <li className="nav-item" >
+                        {/* <li className="nav-item" >
                             <Link className={showMenu ? 'nav-links active' : 'nav-links'} onClick={closeMobileMenu} to={"/team"}>
                                 Meet the Team
                             </Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item" >
                             <Link className={showMenu ? 'nav-links active' : 'nav-links'} onClick={closeMobileMenu} to={"/services"}>
                                 Services

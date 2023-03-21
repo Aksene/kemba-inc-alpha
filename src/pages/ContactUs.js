@@ -27,16 +27,17 @@ const ContactUs = () => {
                             <input type="email" id="email" name="email" placeholder="Email" required="required" />
                             <label for="message">Message: </label>
                             <textarea
-                            id="message"
-                            name="message"
-                            placeholder="Message"
-                            required="required"
+                                id="message"
+                                name="message"
+                                placeholder="Message"
+                                required="required"
                             ></textarea>
-                            <button type="submit" className="shadow_btn"> Send </button>
+                            <button type="submit" className="submit_btn"> Send </button>
                         </form>
                     </div>
                     <div class="column2">
                         <div className="container2">
+                            <label for="Name">Name: </label>
                             <text for="name">Kemba Inc</text>
                             <label for="number">Number: </label>
                             <text for="number">+1(978)-xxx-xxxx</text>
@@ -48,7 +49,15 @@ const ContactUs = () => {
                     </div>
                 </div>
                 <div className="contactUS-map_row">
-                    2222 Boylston St, Boston, MA, 01945
+                    {/* 2222 Boylston St, Boston, MA, 01945 */}
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.745317854403!2d-71.15090318416823!3d42.326630579189214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37891e5242a2f%3A0xc14d2dca2ff261cd!2sBoylston%20St%2C%20Massachusetts!5e0!3m2!1sen!2sus!4v1675725476356!5m2!1sen!2sus" 
+                        allowFullScreen="true" 
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        frameborder="0"
+                    >
+                    </iframe>
                 </div>
         </div>
         </Layout>

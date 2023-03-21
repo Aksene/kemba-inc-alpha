@@ -78,3 +78,9 @@
   color: var(--light-color);
   padding: 50px;
 }
+
+@media (max-width: 900px) {
+  .main-header_text {
+    top: 450px !important;
+  }
+}

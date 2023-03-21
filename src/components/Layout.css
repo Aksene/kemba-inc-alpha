@@ -113,8 +113,11 @@
 }
 
 @media (max-width: 900px) {
+  .header {
+    overflow: hidden;
+  }
   .navbar.active {
-    background: #41213f;
+    background: var(--dark-color);
   }
 
   .nav-menu {
@@ -122,20 +125,21 @@
     flex-direction: column;
     justify-content: start;
     width: 100%;
-    height: 91.5vh;
-    position: absolute;
-    top: 70px;
+    height: calc(100vh - 77px);
+    position: fixed;
+    top: 60px;
     opacity: 1;
     transition: all 0s ease;
     display: none;
+    z-index: 2;
   }
 
   .nav-menu.active {
-    background: #41213f;
+    background: var(--dark-color);
     right: 0;
     opacity: 1;
     transition: all 0.1s ease;
-    z-index: 1;
+    z-index: 2;
     visibility: visible;
     display: block;
     font-weight: bolder;
@@ -157,8 +161,9 @@
     padding: 2rem;
     width: 100%;
     display: table;
-    /* color: #f00946; */
-    color: var(--brand-color);
+    color: white;
+    font-weight: bolder;
+    /* color: var(--brand-color); */
 
     margin: auto;
   }
@@ -174,9 +179,15 @@
   }
 
   .nav-item {
-    width: 100%;
+    width: 90%;
     margin: auto;
     /* height: 20px; */
+    background-color: var(--mid-color);
+    border: 3px solid var(--mid-color);
+    border-radius: 10px;
+    margin: 1rem;
+    margin-top: 2rem;
+    top: 0px;
   }
 
   .menu-icon {
@@ -325,6 +336,9 @@ footer {
   }
   .footer-icon-group li {
     padding: 10px;
+  }
+  .footer-links {
+    grid-template-columns: auto;
   }
 }
 @media (max-width: 650px) {

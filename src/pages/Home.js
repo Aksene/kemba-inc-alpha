@@ -34,10 +34,10 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="main-divider">
+                {/* <div className="main-divider">
                     <h1> Keep scrolling down please</h1>
                     <h3>I can add whatever slogan you want here or remove the component</h3>
-                </div>
+                </div> */}
 
                 <HeroFlip
                     className="Hero1"
@@ -75,8 +75,7 @@ const Home = () => {
                 <div className="footer-divider">
                     <video src={footerTest} autoPlay={true} playsInline loop muted />
                     <div className="footer-divider_text">
-                        <h1> Keep scrolling down please</h1>
-                        <h3>I can add whatever slogan you want here or remove the component</h3>
+                        <h1> Kemba Inc, Tried and Trusted</h1>
                     </div>
                 </div>
             </div>

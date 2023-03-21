@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 5rem;
-  padding: 50px;
+  padding: 5rem;
   width: 100%;
   max-width: 1200px;
 }
@@ -64,4 +64,30 @@
   background: var(--dark-color);
   box-shadow: 0 0 5px var(--brand-color), 0 0 25px var(--brand-color),
     0 0 50px var(--brand-color), 0 0 100px var(--brand-color);
+}
+
+@media screen and (max-width: 845px) {
+  .dualLink-hero {
+    grid-template-columns: 1fr;
+    grid-row-gap: 5rem;
+    padding: 3rem;
+    width: 70%;
+  }
+  .dualLink-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-column-gap: 0rem; */
+  }
+
+  .dualLink-hero_btn {
+    top: 200px !important;
+    /* padding-left: 3rem !important; */
+  }
+  .shadow__btn {
+    width: 100%;
+  }
+  .dualLink-col img {
+    height: 85%;
+    width: 95%;
+  }
 }

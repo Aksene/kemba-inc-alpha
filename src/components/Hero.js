@@ -12,9 +12,6 @@ const Hero = ({ pic, title, text, color, textColor, page, buttonName}) => {
             <div className="main-hero_text">
                 <h1>{title}</h1>
                 <h3 >{text}</h3>
-
-
-
                 { 
                     buttonName 
                     ?
@@ -23,7 +20,6 @@ const Hero = ({ pic, title, text, color, textColor, page, buttonName}) => {
                         </a>
                     :
                         ""
-
                 }
             </div>
             <div className="main-hero_image-container">
