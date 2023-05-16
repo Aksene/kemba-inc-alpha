@@ -93,3 +93,9 @@
 /* .product-divider h1 {
   color: var(--mid-color);
 } */
+
+@media screen and (max-width: 845px) {
+  .product-miniDiv {
+    width: 85%;
+  }
+}

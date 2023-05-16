@@ -24,7 +24,7 @@ const Layout = ({children}) => {
                     </Link>
                 </div>
 
-                <div className="menu-icon" onClick={() => setShowMenu(!showMenu)}>
+                <div className={showMenu ? 'menu-icon active' : 'menu-icon'} onClick={() => setShowMenu(!showMenu)}>
                     {
                             showMenu ?
                             <FontAwesomeIcon
@@ -78,7 +78,7 @@ const Layout = ({children}) => {
 
             </header>
 
-            <main>
+            <main className={showMenu ? 'no-scroll' : ''}>
                 {children}
             </main>
 

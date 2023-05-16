@@ -62,11 +62,14 @@
 
 @media screen and (max-width: 845px) {
   .heroDualText-hero {
-    /* width: 100%; */
+    width: 74%;
+    height: 50%;
     grid-template-columns: 1fr;
+    margin: auto;
+
     /* grid-column-gap: 1.5rem; */
   }
-  .heroDualText-hero_img {
-    height: 500px;
+  .heroDualText-hero_text {
+    font-size: small;
   }
 }

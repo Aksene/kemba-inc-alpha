@@ -113,7 +113,7 @@
 }
 
 .fa-bars {
-  /* color: #fff; */
+  /* color: var(--hover-color); */
 }
 
 .menu-icon {
@@ -126,6 +126,8 @@
   }
   .navbar.active {
     background: var(--dark-color);
+    overflow: hidden;
+    /* position: fixed; */
   }
 
   .nav-menu {
@@ -144,6 +146,7 @@
 
   .nav-menu.active {
     background: var(--dark-color);
+    height: 100%;
     right: 0;
     opacity: 1;
     transition: all 0.1s ease;
@@ -206,6 +209,17 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu-icon.active {
+    position: fixed;
+  }
+
+  .no-scroll {
+    overflow-y: hidden;
+    position: fixed;
+    /* touch-action: none; */
   }
 
   .nav-btn {
