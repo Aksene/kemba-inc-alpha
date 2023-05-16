@@ -84,7 +84,14 @@
     grid-template-columns: 1fr;
     /* grid-column-gap: 1.5rem; */
   }
-  .heroDualImg_img {
-    height: 500px;
+  .heroDualImg_spec {
+    height: 400px;
+    width: 350px;
+  }
+
+  .heroDualImgFlip_spec {
+    height: 450px;
+    width: 350px;
+    padding-bottom: 10px;
   }
 }
