@@ -3,6 +3,7 @@ import './Layout.css'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import abdousWorld from '../Assets/abdousWorld.png'
+import logo1 from '../Assets/logo1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FaTwitter, FaInstagram } from "react-icons/fa";
@@ -18,8 +19,8 @@ const Layout = ({children}) => {
             <header className="header">
                 <div className="header-image-container">
                     <Link to={"/"}>
-                        {/* <img className="header-image" src={logo} alt="Slaymasters" /> */}
-                        <p>Kemba Inc</p>
+                        <img className="header-image" src={logo1} alt="Kemba" />
+                        {/* <p>Kemba Inc</p> */}
                     </Link>
                 </div>
 
@@ -52,14 +53,19 @@ const Layout = ({children}) => {
                                 About Us
                             </Link>
                         </li>
-                        {/* <li className="nav-item" >
+                        <li className="nav-item" >
                             <Link className={showMenu ? 'nav-links active' : 'nav-links'} onClick={closeMobileMenu} to={"/team"}>
                                 Meet the Team
                             </Link>
-                        </li> */}
+                        </li>
                         <li className="nav-item" >
                             <Link className={showMenu ? 'nav-links active' : 'nav-links'} onClick={closeMobileMenu} to={"/services"}>
                                 Services
+                            </Link>
+                        </li>
+                        <li className="nav-item" >
+                            <Link className={showMenu ? 'nav-links active' : 'nav-links'} onClick={closeMobileMenu} to={"/products"}>
+                                Products
                             </Link>
                         </li>
                         <li className="nav-item" >
@@ -77,9 +83,11 @@ const Layout = ({children}) => {
             </main>
 
             <footer>
-                <div className="slaymaster-logo-bottom-container">
-                        {/* <img className="slaymaster-logo-bottom" src={logo} alt="SlaymasterLogoBottom" /> */}
-                        Kemba Inc
+                <div className="kemba-logo-bottom-container">
+                    <Link to={"/"}>
+                        <img className="kemba-logo-bottom" src={logo1} alt="KembaLogoBottom" />
+                        {/* Kemba Inc */}
+                    </Link>
                 </div>
                 <div className="footer-links">
                     <div className="footer-aboutUs">
@@ -91,8 +99,8 @@ const Layout = ({children}) => {
                                 </a>
                             </li>
                             <li className="footer-cat_links">
-                                <Link to="/about-us/#ceo">
-                                        <span>Meet Our Ceo</span>
+                                <Link to="/products">
+                                        <span>Products</span>
                                 </Link>
                                 
                             </li>
@@ -127,21 +135,23 @@ const Layout = ({children}) => {
                         <ul>
                             <h3>Contact Information</h3>
                             <li className="footer-cat_links">
-                                Number: <span> </span>
-                                <a>
-                                    <span>+1(978)xxx-xxxx</span>
-                                </a>
+                                Number [United States]: <span> </span>
+                                <span>+1 (978) 406-1878</span>
+                            </li>
+                            <li className="footer-cat_links">
+                                Number [Senegal]: <span> </span>
+                                <span>+221.77.810.38.94 / 78.317.52.52</span>
                             </li>
                             <li className="footer-cat_links">
                                 E-mail: <span> </span> 
                                 <a href="mailto:kembacorp@gmail.com" target="_blank">
-                                    <span>kembacorp@gmail.com</span>
+                                    <span>ousman.n@kemba-inc.com</span>
                                 </a>
                             </li>
                             <li className="footer-cat_links">
                                 Address: <span> </span>
-                                <a>
-                                    <span>2222 Boylston St, Boston, MA, 01945</span>
+                                <a target="_blank" href="https://www.google.com/maps/search/Government+Center+1+Washington+Mall+Suite,+BOSTON,+MA,+1456/@42.3597232,-71.0619772,17z/data=!3m1!4b1" >
+                                    <span>Government Center 1 Washington Mall Suite, BOSTON, MA, 1456 </span>
                                 </a>
                             </li>
                         </ul>

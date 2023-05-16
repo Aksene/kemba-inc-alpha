@@ -23,9 +23,17 @@
   font-weight: 900;
 }
 .header-image {
-  padding-top: 2px;
-  width: 165px;
+  position: relative;
+  top: 120px;
+  margin-top: -110px;
+  padding: 10px;
+  width: 200px;
+  height: 70px;
   float: left;
+}
+
+.header-image-container {
+  /* margin-top: 40px; */
 }
 
 .header-links {
@@ -236,9 +244,10 @@ footer {
   display: grid;
   grid-template-columns: auto;
 }
-.slaymaster-logo-bottom-container {
+.kemba-logo-bottom-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: auto;
   width: 85%;
   /* border: 3px solid green; */
@@ -248,10 +257,10 @@ footer {
   margin-bottom: 2rem;
 }
 
-.slaymaster-logo-bottom {
-  height: 45px;
-  width: 100px;
-  margin-bottom: 3rem;
+.kemba-logo-bottom {
+  height: 70px;
+  width: 200px;
+  margin: 2rem;
 }
 
 .footer-links {

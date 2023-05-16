@@ -20,7 +20,8 @@ body {
   color: var(--dark-color);
 }
 
-body h3 {
+body h3,
+h4 {
   color: var(--mid-color);
 }
 
